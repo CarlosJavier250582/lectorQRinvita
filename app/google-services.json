@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "800904027914",
+    "firebase_url": "https://xvmuestra.firebaseio.com",
+    "project_id": "xvmuestra",
+    "storage_bucket": "xvmuestra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800904027914:android:a08952f87efe3d56",
+        "android_client_info": {
+          "package_name": "com.example.carlosje.lectorqrinvita"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800904027914-0723vl19b2hl14dqen8fbac88j6mmhq3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.carlosje.lectorqrinvita",
+            "certificate_hash": "3882a3177bcb1f32d3b3b0b55a8aed8ec61bc604"
+          }
+        },
+        {
+          "client_id": "800904027914-ijako441qu15sholmj8qre9ro74t8jth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMiZtZi7wHCEQgKUGnVxSQMEhc1874KCI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800904027914-ijako441qu15sholmj8qre9ro74t8jth.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

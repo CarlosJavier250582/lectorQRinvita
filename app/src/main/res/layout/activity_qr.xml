@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.carlosje.lectorqrinvita.qrActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="3.73"
+            android:elevation="0dp"
+            android:focusable="false"
+            android:padding="16dp"
+            android:visibility="visible"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:contentPaddingBottom="32dp"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_qr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="16dp"
+                    android:text="hola"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/lb_familia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_qr"
+                    android:layout_margin="16dp"
+                    android:text="Familia"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_familia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lb_familia"
+                    android:layout_marginLeft="16dp"
+                    android:text="Familia"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/lb_restan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_familia"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Restantes: "
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_restan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_familia"
+                    android:layout_marginLeft="32dp"
+                    android:layout_toRightOf="@+id/lb_restan"
+                    android:text="restan"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="32sp" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="34dp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:layout_weight="3.73"
+            android:elevation="0dp"
+            android:focusable="false"
+            android:visibility="visible"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:contentPaddingBottom="32dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/card1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:padding="16dp">
+
+                <EditText
+                    android:id="@+id/et_ingresan"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignStart="@+id/button2"
+                    android:layout_below="@+id/lb_restan"
+                    android:layout_marginTop="23dp"
+                    android:ems="10"
+                    android:hint="Ingresan"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/bt_envia"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/lb_restan"
+                    android:layout_below="@+id/et_ingresan"
+                    android:layout_marginTop="17dp"
+                    android:background="@color/colorPrimary"
+                    android:onClick="ingreso"
+                    android:text="Enviar Ingreso"
+                    android:textColor="@color/cardview_light_background" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
